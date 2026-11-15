@@ -1,3 +1,0 @@
-/* 05: raise Lucy clearly between cyan rails; preserve 15% HUD opacity */
-.lucy-panel,.scene-button{background:rgba(var(--hud-rgb,18,42,49),.15)!important}.lucy-panel__portrait,.lucy-panel__echo{bottom:30px!important;height:calc(100% + 98px)!important}
-main:not(.space-prologue)>footer{background:rgba(7,19,27,.15)!important}main:not(.space-prologue)>footer button,main:not(.space-prologue)>footer button.primary{background:rgba(18,48,57,.15)!important}
