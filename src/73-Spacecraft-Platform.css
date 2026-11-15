@@ -43,20 +43,23 @@
 @media(max-width:1000px){.phase-4 .platform-graphic{left:48%!important;transform:scale(.82)!important}}
 @media(max-width:700px){.phase-4 .platform-graphic{left:50%!important;transform:scale(.64)!important}}
 
-/* 08 - SmallSat placement fix. The state class is on the ancestor (.platform-smallsat), not on .platform-graphic. */
+/* 09 SmallSat fix: Workbench.css defines .craft with transform, so reset it inside Phase 4. */
+.phase-4 .platform-game .platform-graphic .craft{
+  position:relative!important;
+  transform:none!important;
+  color:inherit!important;
+  font-size:inherit!important;
+}
 .phase-4 .platform-smallsat .platform-graphic{
-  left:43%!important;
-  top:44%!important;
+  left:47%!important;
+  top:43%!important;
+}
+.phase-4 .platform-smallsat .platform-graphic .smallsat-craft{
+  transform:scale(.87)!important;
 }
 @media(max-width:1000px){
-  .phase-4 .platform-smallsat .platform-graphic{
-    left:42%!important;
-    top:43%!important;
-  }
+  .phase-4 .platform-smallsat .platform-graphic{left:46%!important;top:42%!important}
 }
 @media(max-width:700px){
-  .phase-4 .platform-smallsat .platform-graphic{
-    left:46%!important;
-    top:44%!important;
-  }
+  .phase-4 .platform-smallsat .platform-graphic{left:49%!important;top:43%!important}
 }
