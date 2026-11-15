@@ -177,36 +177,69 @@ export default function ArcadePhase(props: Props) {
 
       
         
-          {passedCount}/{games.length} TESTS PASSED
-        
+<b>
+  {passedCount}/{games.length} TESTS PASSED
+</b>
 
-        
-          Fuel consumed: {fuelConsumed}%
-        
-      
+<span>
+  Fuel consumed: {fuelConsumed}%
+</span>
+</div>
 
-      {activeGame ? (
-         setActiveId(null)}
-          onFinish={result => {
-            props.onResult(result);
-            setActiveId(null);
-          }}
-        />
-      ) : (
-        
-          {games.map((game, index) => {
-            const result = props.results.find(
-              savedResult => savedResult.id === game.id,
-            );
+{activeGame ? (
+  <GameCanvas
+    key={activeGame.id}
+    game={activeGame}
+    onExit={() => setActiveId(null)}
+    onFinish={(result: ArcadeResult) => {
+      props.onResult(result);
+      setActiveId(null);
+    }}
+  />
+) : (
+  <div className="arcade-grid">
+    {games.map((game: Game, index: number) => {
+      const result = props.results.find(
+        (savedResult: ArcadeResult) => savedResult.id === game.id
+      );
 
-            return (
-               openGame(game.id)}
-              >
-                
-                  {String(index + 1).padStart(2, '0')}
-                
+      return (
+        <button
+          type="button"
+          key={game.id}
+          data-game-id={game.id}
+          className={
+            result?.success
+              ? 'passed'
+              : result
+                ? 'failed'
+                : ''
+          }
+          onClick={() => openGame(game.id)}
+        >
+          <em>{String(index + 1).padStart(2, '0')}</em>
 
-                {game.title}
+          <strong>{game.title}</strong>
+
+          <span>{game.brief}</span>
+
+          <small>{game.why}</small>
+
+          <i>
+            {result
+              ? result.success
+                ? `PASSED · ${result.fuelSpent}% FUEL`
+                : 'FAILED · MISSION RISK ADDED'
+              : 'READY'}
+          </i>
+        </button>
+      );
+    })}
+  </div>
+)}
+</div>
+);
+}
 
                 {game.brief}
 
