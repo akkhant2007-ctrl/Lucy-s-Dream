@@ -1,13 +1,1 @@
-import React from 'react';
-import {createRoot} from 'react-dom/client';
-import App from './App';
-import RocketPortal from './RocketPortal';
-import './styles.css';
-import './32-Rocket-Background.css';
-
-createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-    <RocketPortal />
-  </React.StrictMode>
-);
+import React from'react';import{createRoot}from'react-dom/client';import App from'./App';import RocketPortal from'./RocketPortal';import ArchitecturePortal from'./ArchitecturePortal';import'./styles.css';import'./32-Rocket-Background.css';import'./48-Architecture.css';import'./49-Architecture-Portal.css';createRoot(document.getElementById('root')!).render(<React.StrictMode><App/><RocketPortal/><ArchitecturePortal/></React.StrictMode>);

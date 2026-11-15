@@ -1,0 +1,2 @@
+/* Hide the old Phase-2 dashboard only when the replacement portal exists. */
+.phase-2 .workspace:has(.architecture-portal-root)>:not(.architecture-portal-root){display:none!important}.phase-2 .workspace:has(.architecture-portal-root){padding-top:18px!important;overflow:auto!important}.architecture-portal-root{display:block!important;width:100%!important;position:relative!important;z-index:4!important}.phase-2 .lead{display:none!important}
