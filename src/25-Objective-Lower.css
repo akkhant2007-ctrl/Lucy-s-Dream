@@ -1,15 +1,18 @@
-/* 25 — Phase 01 breathing room: image first, guidance after scroll. Locked intro unaffected. */
-.phase-1 .workspace{padding-bottom:180px!important}.phase-1 .objective-carousel{max-width:1240px!important;margin:auto!important}.phase-1 .mission-visual{margin-bottom:0!important}
-/* Add a full breathing band after the artwork so both circled elements are BELOW the first viewport. */
-.phase-1 .objective-carousel:after{content:'';display:block;height:46vh;min-height:300px;max-height:470px}
-/* Guidance now participates in document flow rather than sitting over the artwork. */
-.phase-1 .objective-lucy{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:min(66%,790px)!important;min-height:142px!important;margin:clamp(120px,18vh,220px) 0 0 0!important;padding:29px 142px 26px 24px!important;background:rgba(18,42,49,.15)!important;border:1px solid #9debf1aa!important;clip-path:polygon(0 0,72% 0,75% 11px,calc(100% - 25px) 11px,100% 36px,100% calc(100% - 20px),calc(100% - 20px) 100%,18px 100%,0 calc(100% - 18px))!important;backdrop-filter:blur(4px)!important}
-/* CRITICAL: the area behind LUCY is exactly the same 15%-glass as the rest. */
+/* 26 — Phase 01 layout cleanup. First Lucy prologue is untouched. */
+/* Remove the large duplicated page heading marked out in the reference. */
+.phase-1 .carousel-heading{display:none!important}
+/* Keep hero manageable and immediately visible below the global header. */
+.phase-1 .workspace{padding-top:22px!important;padding-bottom:118px!important}.phase-1 .objective-carousel{max-width:1240px!important;margin:0 auto!important}.phase-1 .mission-visual{margin:0!important;min-height:430px!important;height:min(58vh,530px)!important}
+/* Reposition mission identity into the upper-left region indicated by the arrow. */
+.phase-1 .mission-title{left:78px!important;top:58px!important;bottom:auto!important;max-width:54%!important}.phase-1 .mission-title h2{font-size:clamp(30px,4vw,52px)!important;margin-top:7px!important}.phase-1 .mission-title p{font-size:17px!important}.phase-1 .difficulty{top:42px!important;right:74px!important;bottom:auto!important}
+/* No fake scroll spacer. Guidance is directly beneath hero in normal flow. */
+.phase-1 .objective-carousel:after{display:none!important;content:none!important}
+/* Lucy guidance immediately below the artwork, in the region indicated by the second arrow. */
+.phase-1 .objective-lucy{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:min(66%,790px)!important;min-height:142px!important;margin:18px 0 0 0!important;padding:29px 142px 26px 24px!important;background:rgba(18,42,49,.15)!important;border:1px solid #9debf1aa!important;clip-path:polygon(0 0,72% 0,75% 11px,calc(100% - 25px) 11px,100% 36px,100% calc(100% - 20px),calc(100% - 20px) 100%,18px 100%,0 calc(100% - 18px))!important;backdrop-filter:blur(4px)!important}
+/* The LUCY header has identical transparency to dialogue. No separate blue block. */
 .phase-1 .objective-lucy header,.phase-1 .objective-lucy header strong,.phase-1 .objective-lucy header small{background:transparent!important;background-color:transparent!important;box-shadow:none!important}.phase-1 .objective-lucy header{border-bottom:1px solid #c8ffff55!important}
-/* ARM box also moves into flow, aligned lower-right of the guidance section. */
-.phase-1 .mission-select-strip{position:relative!important;right:auto!important;left:auto!important;bottom:auto!important;top:auto!important;margin:22px 0 0 auto!important;width:max-content!important;z-index:2!important}.phase-1 .mission-select-strip button{background:rgba(18,42,49,.15)!important;backdrop-filter:blur(4px)!important;border:1px solid #9debf1aa!important;color:#f5ffff!important}
-/* Leave enough space after guidance before fixed global nav. */
-.phase-1 .mission-select-strip{margin-bottom:100px!important}
-/* Image viewport should be the hero, uncluttered by guidance. */
-.phase-1 .mission-title{bottom:42px!important;top:auto!important}.phase-1 .difficulty{top:39px!important;bottom:auto!important}
-@media(max-width:800px){.phase-1 .objective-carousel:after{height:28vh;min-height:180px}.phase-1 .objective-lucy{width:100%!important;margin-top:92px!important;padding-right:122px!important}.phase-1 .mission-select-strip{margin-top:18px!important;margin-bottom:90px!important}}
+/* Remove the ARM mission control entirely. Standard Back / Confirm is the only commit/navigation UI. */
+.phase-1 .mission-select-strip{display:none!important}
+/* Standard controls remain visible below. */
+.phase-1 .actionbar{display:flex!important}.phase-1 .progress{display:none!important}
+@media(max-width:800px){.phase-1 .mission-title{left:68px!important;top:42px!important;max-width:62%!important}.phase-1 .difficulty{top:130px!important;right:28px!important}.phase-1 .objective-lucy{width:100%!important;margin-top:14px!important;padding-right:122px!important}}
