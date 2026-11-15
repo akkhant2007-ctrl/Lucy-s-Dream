@@ -42,3 +42,21 @@
 /* Keep model emphasis below the title area and away from the right arrow */
 @media(max-width:1000px){.phase-4 .platform-graphic{left:48%!important;transform:scale(.82)!important}}
 @media(max-width:700px){.phase-4 .platform-graphic{left:50%!important;transform:scale(.64)!important}}
+
+/* 08 - SmallSat placement fix. The state class is on the ancestor (.platform-smallsat), not on .platform-graphic. */
+.phase-4 .platform-smallsat .platform-graphic{
+  left:43%!important;
+  top:44%!important;
+}
+@media(max-width:1000px){
+  .phase-4 .platform-smallsat .platform-graphic{
+    left:42%!important;
+    top:43%!important;
+  }
+}
+@media(max-width:700px){
+  .phase-4 .platform-smallsat .platform-graphic{
+    left:46%!important;
+    top:44%!important;
+  }
+}
