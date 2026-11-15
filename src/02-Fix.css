@@ -1,0 +1,4 @@
+/* 02: restore undistorted Lucy crop + 10 percentage points more panel opacity */
+:root{--v02-panel:rgba(18,42,49,.17);--v02-button:rgba(18,48,57,.17)}
+.lucy-panel{background:var(--v02-panel)!important;backdrop-filter:blur(4px)!important}.lucy-panel__copy,.lucy-panel__copy header{background:transparent!important}.scene-button{background:var(--v02-button)!important;backdrop-filter:blur(4px)!important}.scene-button:hover{background:rgba(48,98,107,.25)!important}
+main:not(.space-prologue)>footer{background:rgba(7,19,27,.17)!important}main:not(.space-prologue)>footer button,main:not(.space-prologue)>footer button.primary{background:rgba(18,48,57,.17)!important}main:not(.space-prologue)>footer button:hover:not(:disabled){background:rgba(74,143,151,.25)!important}
