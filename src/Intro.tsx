@@ -1,4 +1,5 @@
-import{useState}from'react';import{ChevronLeft,ChevronRight}from'lucide-react';import'./IntroSpace.css';import './13-Fix.css';
+import{useState}from'react';import{ChevronLeft,ChevronRight}from'lucide-react';import'./IntroSpace.css';import './13-Fix.css';import './14-Fix.css';
+
 
 type P={onComplete:()=>void};
 const lines=['Hey. You lost, or just looking for company?','To space?…','I’ve always wanted to see the moon…',"You're new around here, right? Come on. I'll show you around."];
