@@ -4,7 +4,6 @@ import './IntroSpace.css';
 import './02-Fix.css';
 import './04-Fix.css';
 import './05-Fix.css';
-import './06-Fix.css';
 
 type IntroProps={onComplete:()=>void};
 
