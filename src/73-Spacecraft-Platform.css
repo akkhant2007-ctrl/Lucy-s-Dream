@@ -19,3 +19,26 @@
 /* Custom bus: asymmetric payload, high-gain antenna, boom and unequal wings */
 .custom-bus{position:absolute;z-index:5;left:50%;top:21px;translate:-50% 0;width:220px;height:171px}.custom-main{position:absolute;left:7px;top:41px;width:142px;height:113px;background:linear-gradient(140deg,#b5d9df,#506d77 60%,#263e48);border:2px solid #9debf1;clip-path:polygon(12% 0,100% 0,100% 86%,89% 100%,0 100%,0 13%);box-shadow:0 0 22px #72e8ff4d}.custom-main .bay{position:absolute;bottom:14px;width:29px;height:48px;background:#334f59;border:1px solid #9debf177}.custom-main .b1{left:16px}.custom-main .b2{left:54px}.custom-main .b3{left:92px}.custom-payload{position:absolute;right:1px;top:6px;width:86px;height:94px;background:linear-gradient(150deg,#7c9ca5,#294550);border:2px solid #b2fbff;clip-path:polygon(15% 0,100% 0,100% 82%,84% 100%,0 100%,0 17%)}.custom-payload i{position:absolute;right:22px;top:21px;width:26px;height:26px;border-radius:50%;border:2px solid #f6d35d;background:#102932}.custom-payload b{position:absolute;left:13px;top:14px;width:27px;height:9px;border:1px solid #aef9fc}.custom-deck{position:absolute;left:39px;top:19px;width:62px;height:22px;border:1px solid #9debf1;background:#36535d}.custom-camera{position:absolute;left:94px;top:27px;width:25px;height:25px;border-radius:50%;border:2px solid #10161a;background:#f6d35d;box-shadow:0 0 8px #f6d35d66}.custom-wing.left{right:calc(50% + 105px)}.custom-wing.right{left:calc(50% + 109px)}.custom-wing.short{top:88px}.custom-wing.short i{width:42px}.custom-dish{left:calc(50% + 52px);top:-15px;width:66px;height:66px;rotate:-25deg}.custom-hga-feed{position:absolute;z-index:8;left:calc(50% + 81px);top:23px;width:20px;height:20px;border:2px solid #f6d35d;border-radius:50%;background:#122832}.custom-boom{position:absolute;z-index:3;left:calc(50% - 108px);top:152px;width:136px;height:3px;background:#9debf1;transform-origin:right;transform:rotate(-15deg);box-shadow:0 0 6px #72e8ff}.custom-boom i{position:absolute;left:-8px;top:-8px;width:17px;height:17px;background:#173640;border:2px solid #9debf1;transform:rotate(35deg)}
 @media(max-width:1000px){.platform-graphic{left:50%;transform:scale(.84)}}@media(max-width:700px){.platform-graphic{left:50%;transform:scale(.66)}}
+
+/* 03 Phase 4 visual polish: technical CAD treatment, centred composition */
+.phase-4 .platform-graphic{left:49%!important;top:47%!important;width:620px!important}
+.phase-4 .platform-graphic .craft{filter:drop-shadow(0 0 5px #72e8ff22)!important}
+.phase-4 .platform-graphic .solar-wing i{background:linear-gradient(135deg,rgba(27,69,111,.72),rgba(8,27,49,.86))!important;border-color:#66aee8!important;box-shadow:inset 0 0 5px #56a7ff18,0 0 3px #4d9fed2e!important}
+.phase-4 .cube-bus,.phase-4 .small-bus,.phase-4 .espa-payload,.phase-4 .custom-main,.phase-4 .custom-payload{box-shadow:0 0 9px #72e8ff35!important}
+/* SmallSat: reduce bus dominance while preserving its larger class */
+.phase-4 .smallsat-craft{transform:scale(.87)!important}
+.phase-4 .small-bus{background:linear-gradient(145deg,rgba(157,207,216,.76),rgba(60,91,103,.78) 64%,rgba(24,53,64,.8))!important}
+/* ESPA: make the adapter read as structural hardware, not a glowing oval */
+.phase-4 .espa-ring{left:27px!important;right:27px!important;bottom:21px!important;height:38px!important;border-width:4px!important;border-color:#8edee5!important;box-shadow:0 0 5px #72e8ff35,inset 0 0 5px #72e8ff20!important;background:#122b33cc!important}
+.phase-4 .espa-neck:before,.phase-4 .espa-neck:after{content:'';position:absolute;top:7px;width:42px;height:2px;background:#8edee5;transform-origin:center}
+.phase-4 .espa-neck:before{right:27px;transform:rotate(49deg)}.phase-4 .espa-neck:after{left:27px;transform:rotate(-49deg)}
+.phase-4 .espa-ring i{width:11px!important;height:11px!important;border-width:1px!important}
+/* Custom: simplify upper-right cluster and strengthen asymmetric engineering silhouette */
+.phase-4 .custom-bus{transform:scale(.94)!important;transform-origin:center!important}
+.phase-4 .custom-payload i{width:22px!important;height:22px!important;right:26px!important;top:25px!important}.phase-4 .custom-payload b{display:none!important}
+.phase-4 .custom-camera{display:none!important}.phase-4 .custom-hga-feed{width:14px!important;height:14px!important;left:calc(50% + 84px)!important;top:26px!important}
+.phase-4 .custom-dish{width:58px!important;height:58px!important;left:calc(50% + 56px)!important;top:-10px!important}
+.phase-4 .custom-boom{width:112px!important;left:calc(50% - 96px)!important;top:148px!important}
+/* Keep model emphasis below the title area and away from the right arrow */
+@media(max-width:1000px){.phase-4 .platform-graphic{left:48%!important;transform:scale(.82)!important}}
+@media(max-width:700px){.phase-4 .platform-graphic{left:50%!important;transform:scale(.64)!important}}
