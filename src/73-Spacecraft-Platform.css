@@ -42,34 +42,3 @@
 /* Keep model emphasis below the title area and away from the right arrow */
 @media(max-width:1000px){.phase-4 .platform-graphic{left:48%!important;transform:scale(.82)!important}}
 @media(max-width:700px){.phase-4 .platform-graphic{left:50%!important;transform:scale(.64)!important}}
-
-/* 04 Phase 4 refinement: balanced placement + richer technical rendering */
-.phase-4 .platform-graphic{left:47.5%!important;top:46%!important;width:650px!important;height:270px!important}
-.phase-4 .platform-graphic .craft{transform-origin:center!important}
-/* richer panel depth */
-.phase-4 .solar-wing i{border:1px solid #73b9ed!important;background:linear-gradient(145deg,#173e66 0%,#0c2745 54%,#081c32 100%)!important;box-shadow:inset 0 0 0 1px #80c8ff18,inset 8px 0 14px #4b9fe81a,0 0 4px #4d9fed38!important}
-.phase-4 .solar-wing i b{inset:4px!important;border-color:#8fcdff18!important}
-/* CubeSat: less luminous frame and stronger 3D side plane */
-.phase-4 .cube-rail{background:#d9be58!important;box-shadow:0 0 2px #f1cf5840!important}.phase-4 .cube-side{width:27px!important;right:-2px!important;background:linear-gradient(90deg,#345863,#193c48)!important}.phase-4 .cube-top{background:linear-gradient(90deg,#718f96,#486a73)!important}
-/* SmallSat was drifting into the right arrow. Re-centre it independently. */
-.phase-4 .platform-graphic.smallsat{left:46%!important;top:46%!important}
-.phase-4 .smallsat-craft{transform:scale(.82)!important}
-.phase-4 .small-bus{width:166px!important;height:130px!important;background:linear-gradient(145deg,rgba(145,194,203,.78),rgba(54,86,98,.88) 60%,rgba(20,48,60,.92))!important;border-color:#9debf1!important;box-shadow:0 0 7px #72e8ff2d!important}
-.phase-4 .small-wing.left{right:calc(50% + 87px)!important}.phase-4 .small-wing.right{left:calc(50% + 87px)!important}
-.phase-4 .small-dish{width:45px!important;height:45px!important;left:calc(50% + 32px)!important;top:1px!important}
-/* ESPA: compact adapter ring with visible braces */
-.phase-4 .espa-bus{transform:scale(.92)!important;transform-origin:center!important}.phase-4 .espa-ring{height:33px!important;left:31px!important;right:31px!important;border-width:3px!important}.phase-4 .espa-neck{width:30px!important;left:80px!important}.phase-4 .espa-neck:before,.phase-4 .espa-neck:after{width:37px!important;background:#87cfd5!important}.phase-4 .espa-base{height:13px!important;left:56px!important;right:56px!important}
-/* Custom: cleaner hierarchy, subtler outlines */
-.phase-4 .custom-bus{transform:scale(.89)!important}.phase-4 .custom-main{background:linear-gradient(145deg,rgba(151,195,203,.8),rgba(57,89,100,.9) 62%,rgba(22,50,61,.95))!important;border-color:#91dce2!important;box-shadow:0 0 8px #72e8ff2b!important}.phase-4 .custom-payload{background:linear-gradient(145deg,#77929a,#294651)!important;border-color:#91dce2!important}.phase-4 .custom-dish{width:52px!important;height:52px!important;border-width:3px!important}.phase-4 .custom-boom{opacity:.86!important}
-@media(max-width:1000px){.phase-4 .platform-graphic{left:48%!important}.phase-4 .platform-graphic.smallsat{left:45%!important}}
-@media(max-width:700px){.phase-4 .platform-graphic,.phase-4 .platform-graphic.smallsat{left:49%!important}}
-
-/* 05: SmallSat position fix only. Move the complete model left, away from the right navigation arrow. */
-.phase-4 .platform-graphic.smallsat{left:34%!important;top:46%!important}
-@media(max-width:1000px){.phase-4 .platform-graphic.smallsat{left:35%!important}}
-@media(max-width:700px){.phase-4 .platform-graphic.smallsat{left:42%!important}}
-
-/* 06: SmallSat placement only - further left and slightly up */
-.phase-4 .platform-graphic.smallsat{left:27%!important;top:41.5%!important}
-@media(max-width:1000px){.phase-4 .platform-graphic.smallsat{left:29%!important;top:42%!important}}
-@media(max-width:700px){.phase-4 .platform-graphic.smallsat{left:38%!important;top:42%!important}}
