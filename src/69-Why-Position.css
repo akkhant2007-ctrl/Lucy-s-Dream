@@ -1,0 +1,9 @@
+/* Phase 3 Architecture WHY: sit just below Lucy / variable row, not overlapping and not far below. */
+.phase-2 .phase3-why{
+  margin-top:-118px!important;
+  margin-bottom:72px!important;
+  position:relative!important;
+  z-index:5!important;
+}
+@media(max-width:1100px){.phase-2 .phase3-why{margin-top:-92px!important}}
+@media(max-width:900px){.phase-2 .phase3-why{margin-top:10px!important}}
