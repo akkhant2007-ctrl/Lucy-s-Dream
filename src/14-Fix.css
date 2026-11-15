@@ -1,0 +1,4 @@
+/* 14 — raise Lucy until upper/lower clearances are approximately equal. */
+/* v13 bottom was 31px. Raise 14px while preserving size and horizontal position. */
+.lucy{bottom:45px!important}
+@media(max-width:700px){.lucy{bottom:41px!important}}
