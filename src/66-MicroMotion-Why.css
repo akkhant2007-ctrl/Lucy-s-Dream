@@ -1,0 +1,9 @@
+/* Reusable WHY teaching panel for finished Phase 2/3. */
+.game-why{position:relative;z-index:5;margin:10px auto 75px;max-width:1240px;padding:12px 15px;border-left:4px solid var(--signal);background:rgba(10,20,30,.30);color:#d7e4ea}.game-why strong{font:9px 'Orbitron';letter-spacing:.07em;color:var(--signal)}.game-why p{margin:6px 0 0;font:14px/1.4 'Rajdhani';letter-spacing:.015em}.phase-1 .game-why,.phase-2 .game-why{max-width:1240px}
+/* Slightly stronger than the original Slide-1 idle vibration, still intentionally subtle. */
+@keyframes game-micro-vibe{0%{transform:translate3d(-1.8px,0,0)}25%{transform:translate3d(.8px,-.35px,0)}50%{transform:translate3d(1.8px,0,0)}75%{transform:translate3d(-.7px,.35px,0)}100%{transform:translate3d(-1.8px,0,0)}}
+/* Dialogue/text HUDs, teaching boxes, variable boxes and navigation controls. */
+.slide1-hud-clone,.lucy-panel,.game-why,.purpose-variable,.variable-chip,.orbit-chip,.actionbar button,.intro-controls button{animation:game-micro-vibe 5.8s ease-in-out infinite!important;will-change:transform}.actionbar button:nth-child(2),.intro-controls button:nth-child(2){animation-delay:-1.7s!important}.game-why{animation-delay:-.9s!important}.purpose-variable:nth-child(2n),.variable-chip:nth-child(2n),.orbit-chip:nth-child(2n){animation-delay:-2.1s!important}
+/* Future phases can opt in simply by applying .game-dynamic-box to a panel. */
+.game-dynamic-box{animation:game-micro-vibe 5.8s ease-in-out infinite!important;will-change:transform}
+@media(prefers-reduced-motion:reduce){.slide1-hud-clone,.lucy-panel,.game-why,.purpose-variable,.variable-chip,.orbit-chip,.actionbar button,.intro-controls button,.game-dynamic-box{animation:none!important}}
