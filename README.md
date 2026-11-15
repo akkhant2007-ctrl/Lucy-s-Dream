@@ -24,3 +24,5 @@ npm run dev
 3. Framework preset: Vite.
 4. Build command: `npm run build`.
 5. Output directory: `dist`.
+
+AI tools used: Microsoft Copilot Usage: Code generation and debugging, development assistance
