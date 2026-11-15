@@ -68,3 +68,8 @@
 .phase-4 .platform-graphic.smallsat{left:34%!important;top:46%!important}
 @media(max-width:1000px){.phase-4 .platform-graphic.smallsat{left:35%!important}}
 @media(max-width:700px){.phase-4 .platform-graphic.smallsat{left:42%!important}}
+
+/* 06: SmallSat placement only - further left and slightly up */
+.phase-4 .platform-graphic.smallsat{left:27%!important;top:41.5%!important}
+@media(max-width:1000px){.phase-4 .platform-graphic.smallsat{left:29%!important;top:42%!important}}
+@media(max-width:700px){.phase-4 .platform-graphic.smallsat{left:38%!important;top:42%!important}}
