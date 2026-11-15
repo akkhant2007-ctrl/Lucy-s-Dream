@@ -1,0 +1,9 @@
+/* Align Architecture WHY panel directly under the Lucy/variables row. */
+.phase-2 .phase3-why{
+  margin-top:-245px!important;
+  margin-bottom:72px!important;
+  position:relative!important;
+  z-index:5!important;
+}
+@media(max-width:1100px){.phase-2 .phase3-why{margin-top:-190px!important}}
+@media(max-width:900px){.phase-2 .phase3-why{margin-top:-85px!important}}
