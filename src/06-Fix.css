@@ -1,4 +1,0 @@
-/* 06: visible white-island removal is in lucy.png; move portrait fully between cyan rails */
-.lucy-panel__portrait,.lucy-panel__echo{bottom:62px!important;height:calc(100% + 98px)!important}
-/* Retain explicitly requested 15% opacity. */
-.lucy-panel,.scene-button{background:rgba(var(--hud-rgb,18,42,49),.15)!important}main:not(.space-prologue)>footer{background:rgba(7,19,27,.15)!important}main:not(.space-prologue)>footer button,main:not(.space-prologue)>footer button.primary{background:rgba(18,48,57,.15)!important}
