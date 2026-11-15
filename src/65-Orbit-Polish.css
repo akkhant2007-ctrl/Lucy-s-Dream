@@ -1,0 +1,14 @@
+/* 65 — final orbit-diagram polish. Earlier completed slides untouched. */
+/* Give the schematic slightly more room away from selector labels. */
+.oa-diagram{left:36%!important;right:8%!important;top:58px!important;bottom:98px!important}
+/* LEO: tight circular orbit, footprint aimed inward toward Earth. */
+.oa-leo .oa-path{width:210px!important;height:210px!important;rotate:0deg!important}.oa-leo .oa-craft{left:76%!important;top:10%!important}.oa-leo .oa-footprint{transform:translateX(-50%) rotate(26deg)!important;transform-origin:top center!important}
+/* SSO: same orbital size as LEO, but near-polar plane with clearer sunlight cue. */
+.oa-sso .oa-path{width:210px!important;height:210px!important;rotate:82deg!important}.oa-sso .oa-sun{display:flex!important;align-items:center!important;gap:7px!important;right:0!important}.oa-sso .oa-sun:before,.oa-sso .oa-sun:after{content:'';display:block;width:22px;border-top:1px solid #f6db6488;box-shadow:0 0 5px #f6db6444}.oa-sso .oa-sun i{width:48px!important;margin-right:0!important}.oa-sso .oa-footprint{transform:translateX(-50%) rotate(-56deg)!important}
+/* HEO: bring labels onto the actual near/far portions of the trajectory. */
+.oa-heo .oa-earth{left:30%!important}.oa-heo .oa-path{left:56%!important;width:500px!important;height:210px!important;rotate:-8deg!important}.oa-heo .oa-peri{left:25%!important;top:58%!important}.oa-heo .oa-apo{right:7%!important;top:26%!important}.oa-heo .oa-craft{left:86%!important;top:12%!important}
+/* Lunar polar: centre the Moon precisely inside its path and keep the Earth-link annotation outside. */
+.oa-lunar .oa-moon{left:50%!important;top:50%!important}.oa-lunar .oa-path{left:50%!important;top:50%!important;width:190px!important;height:190px!important;rotate:82deg!important}.oa-lunar .oa-earth-link{right:-5px!important;bottom:10px!important;width:118px!important}.oa-lunar .oa-footprint{transform:translateX(-50%) rotate(-56deg)!important}
+/* Do not let the explanatory graphic touch navigation tabs. */
+.oa-note{bottom:-18px!important}
+@media(max-width:900px){.oa-diagram{left:25%!important;right:5%!important}.oa-heo .oa-path{width:405px!important;height:178px!important}.oa-heo .oa-earth{left:28%!important}}
