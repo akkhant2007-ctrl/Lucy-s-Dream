@@ -63,3 +63,8 @@
 .phase-4 .custom-bus{transform:scale(.89)!important}.phase-4 .custom-main{background:linear-gradient(145deg,rgba(151,195,203,.8),rgba(57,89,100,.9) 62%,rgba(22,50,61,.95))!important;border-color:#91dce2!important;box-shadow:0 0 8px #72e8ff2b!important}.phase-4 .custom-payload{background:linear-gradient(145deg,#77929a,#294651)!important;border-color:#91dce2!important}.phase-4 .custom-dish{width:52px!important;height:52px!important;border-width:3px!important}.phase-4 .custom-boom{opacity:.86!important}
 @media(max-width:1000px){.phase-4 .platform-graphic{left:48%!important}.phase-4 .platform-graphic.smallsat{left:45%!important}}
 @media(max-width:700px){.phase-4 .platform-graphic,.phase-4 .platform-graphic.smallsat{left:49%!important}}
+
+/* 05: SmallSat position fix only. Move the complete model left, away from the right navigation arrow. */
+.phase-4 .platform-graphic.smallsat{left:34%!important;top:46%!important}
+@media(max-width:1000px){.phase-4 .platform-graphic.smallsat{left:35%!important}}
+@media(max-width:700px){.phase-4 .platform-graphic.smallsat{left:42%!important}}
