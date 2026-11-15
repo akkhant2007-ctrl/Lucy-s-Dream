@@ -1,0 +1,3 @@
+/* 07: center Lucy vertically between the long top and bottom cyan rails. */
+/* 06 used bottom:62px. Raise by another 42px based on the red measurement reference. */
+.lucy-panel__portrait,.lucy-panel__echo{bottom:104px!important;height:calc(100% + 98px)!important}
